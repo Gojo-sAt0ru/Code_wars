@@ -1,23 +1,12 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31729.503
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Codewars", "Codewars\Codewars.pyproj", "{1BDAE2C0-633E-4D56-914E-1BBDE24EEFBB}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1BDAE2C0-633E-4D56-914E-1BBDE24EEFBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1BDAE2C0-633E-4D56-914E-1BBDE24EEFBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {290E2CE2-1A4E-42E9-A686-BD7F1B1C2B71}
-	EndGlobalSection
-EndGlobal
+def find(n):
+    number = 0
+    rangie = range(0, n+1)
+    for num in rangie:
+       if num % 5 == 0 or num % 3 == 0: 
+           number += num
+        
+    return number
+
+
+print(find(5))
+print(find(10))
