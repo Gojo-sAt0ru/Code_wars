@@ -1,3 +1,4 @@
+#Will return the sum of numbers in the range 0 - n that are divisble by 3 or 5
 def find(n):
     number = 0
     rangie = range(0, n+1)
@@ -7,6 +8,14 @@ def find(n):
         
     return number
 
+#######################################################
 
-print(find(5))
-print(find(10))
+#Will return the count of vowels in a string
+def get_count(Sent):
+    check_vowel = ["a", "e", "i", "o", "u"]
+    count = 0 
+    for i in Sent:
+        if i in check_vowel:
+           count += 1 
+    return count
+########################################################
