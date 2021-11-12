@@ -19,3 +19,11 @@ def get_count(Sent):
            count += 1 
     return count
 ########################################################
+
+#Will return all non-odd numbers in an array
+def no_odds(vals):
+    listy = []
+    for i in vals:
+        if i % 2 == 0:
+            listy.append(i)
+    return listy
